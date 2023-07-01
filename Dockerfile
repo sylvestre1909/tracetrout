@@ -12,7 +12,7 @@ RUN apk add --no-cache ca-certificates iptables libnetfilter_queue ${IPV6_SUPPOR
 WORKDIR /tracetrout
 COPY entrypoint.sh .
 COPY --from=builder /tracetrout .
-ENV PORT 80
+ENV PORT 8080
 ENV FILTER_QUEUE 0
 ENTRYPOINT ["sh", "entrypoint.sh"]
 CMD ["./tracetrout"]
