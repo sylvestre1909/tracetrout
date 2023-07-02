@@ -19,7 +19,7 @@ spec:
         - name: HOP_OFFSET
           value: "1"
         ports:
-        - containerPort: 8080
+        - containerPort: 80
           name: http
         securityContext:
           capabilities:
